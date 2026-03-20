@@ -54,8 +54,8 @@ jobs:
         with:
           args: >
             -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.projectKey=YOUR_ORG_YOUR_PROJECT
-            -Dsonar.organization=YOUR_ORG
+            -Dsonar.projectKey=kaueCorreia_t04-arquitetura-de-software-S1-2026
+            -Dsonar.organization=kauecorreia
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.java.binaries=target/classes
             -Dsonar.sources=src/main/java
