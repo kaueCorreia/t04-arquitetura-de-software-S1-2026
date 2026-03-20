@@ -1,9 +1,12 @@
 package com.fag.lucasmartins.arquitetura_software.model.repository.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "produto")
+@Data
 public class ProdutoEntity {
 
     @Id
@@ -17,18 +20,4 @@ public class ProdutoEntity {
     private double precoFinal;
 
     private Integer estoque;
-
-    public Long getId() { return id; }
-
-    public String getNome() { return nome; }
-    public void setNome(String nome) { this.nome = nome; }
-
-    public double getPreco() { return preco; }
-    public void setPreco(double preco) { this.preco = preco; }
-
-    public double getPrecoFinal() { return precoFinal; }
-    public void setPrecoFinal(double precoFinal) { this.precoFinal = precoFinal; }
-
-    public Integer getEstoque() { return estoque; }
-    public void setEstoque(Integer estoque) { this.estoque = estoque; }
 }
